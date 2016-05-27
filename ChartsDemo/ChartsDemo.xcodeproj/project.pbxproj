@@ -97,6 +97,8 @@
 		65BF12B11BFC9B00005C28D9 /* RealmLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF12AF1BFC9B00005C28D9 /* RealmLineChartViewController.xib */; };
 		65BF12B61BFC9B50005C28D9 /* RealmBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF12B41BFC9B50005C28D9 /* RealmBarChartViewController.m */; };
 		65BF12B71BFC9B50005C28D9 /* RealmBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF12B51BFC9B50005C28D9 /* RealmBarChartViewController.xib */; };
+		6C00EC4E1CF825F7008913B7 /* LvesLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C00EC4C1CF825F7008913B7 /* LvesLineChartViewController.m */; };
+		6C00EC4F1CF825F7008913B7 /* LvesLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C00EC4D1CF825F7008913B7 /* LvesLineChartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
 			remoteInfo = Charts;
+		};
+		6C00EC551CF825F8008913B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B8E088D1C635B6D00438BAF /* ChartsRealm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA899431CADB7F20012ED64;
+			remoteInfo = "ChartsRealm-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -303,6 +312,9 @@
 		65BF12B31BFC9B50005C28D9 /* RealmBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmBarChartViewController.h; sourceTree = "<group>"; };
 		65BF12B41BFC9B50005C28D9 /* RealmBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmBarChartViewController.m; sourceTree = "<group>"; };
 		65BF12B51BFC9B50005C28D9 /* RealmBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RealmBarChartViewController.xib; sourceTree = "<group>"; };
+		6C00EC4B1CF825F7008913B7 /* LvesLineChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvesLineChartViewController.h; sourceTree = "<group>"; };
+		6C00EC4C1CF825F7008913B7 /* LvesLineChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvesLineChartViewController.m; sourceTree = "<group>"; };
+		6C00EC4D1CF825F7008913B7 /* LvesLineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LvesLineChartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +425,7 @@
 			children = (
 				5B8E08941C635B6D00438BAF /* ChartsRealm.framework */,
 				5B8E08961C635B6D00438BAF /* ChartsRealm.framework */,
+				6C00EC561CF825F8008913B7 /* ChartsRealm.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -500,6 +513,9 @@
 				5BEAED181ABBFB340013F194 /* StackedBarChartViewController.h */,
 				5BEAED191ABBFB340013F194 /* StackedBarChartViewController.m */,
 				5BEAED1A1ABBFB340013F194 /* StackedBarChartViewController.xib */,
+				6C00EC4B1CF825F7008913B7 /* LvesLineChartViewController.h */,
+				6C00EC4C1CF825F7008913B7 /* LvesLineChartViewController.m */,
+				6C00EC4D1CF825F7008913B7 /* LvesLineChartViewController.xib */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -671,6 +687,13 @@
 			remoteRef = 65B3F6561C73B4F6000983D0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		6C00EC561CF825F8008913B7 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 6C00EC551CF825F8008913B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -712,6 +735,7 @@
 				5BDEDC421ABB7F73007D3A60 /* HorizontalBarChartViewController.xib in Resources */,
 				5B4AC19F1C4C19340028D1A6 /* RealmWikiExampleChartViewController.xib in Resources */,
 				5BDEDC481ABB871E007D3A60 /* CombinedChartViewController.xib in Resources */,
+				6C00EC4F1CF825F7008913B7 /* LvesLineChartViewController.xib in Resources */,
 				5B7B3AD91C437CBC001C109B /* RealmDemoListViewController.xib in Resources */,
 				5B4316371AB8D8B70009FCAA /* Default-736h@3x.png in Resources */,
 				5B4316291AB8D8AE0009FCAA /* Icon-40@2x.png in Resources */,
@@ -733,6 +757,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEAED1B1ABBFB340013F194 /* ScatterChartViewController.m in Sources */,
+				6C00EC4E1CF825F7008913B7 /* LvesLineChartViewController.m in Sources */,
 				5B4AC19E1C4C19340028D1A6 /* RealmWikiExampleChartViewController.m in Sources */,
 				5B4AC1561C47EDC50028D1A6 /* RealmRadarChartViewController.m in Sources */,
 				5B0CC7851ABB875400665592 /* PieChartViewController.m in Sources */,

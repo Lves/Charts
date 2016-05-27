@@ -33,6 +33,7 @@
 #import "PositiveNegativeBarChartViewController.h"
 #import "BubbleChartViewController.h"
 #import "RealmDemoListViewController.h"
+#import "LvesLineChartViewController.h"
 
 @interface DemoListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -49,6 +50,10 @@
     self.title = @"Charts Demonstration";
 
     self.itemDefs = @[
+                      @{@"title": @"Lves LineChart",
+                        @"subtitle": @"自定义折线图",
+                        @"class": LvesLineChartViewController.class
+                        },
                       @{
                           @"title": @"Line Chart",
                           @"subtitle": @"A simple demonstration of the linechart.",

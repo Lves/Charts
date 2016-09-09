@@ -32,10 +32,14 @@ public class LineScatterCandleRadarChartRenderer: ChartDataRendererBase
         // draw vertical highlight lines
         if set.isVerticalHighlightIndicatorEnabled
         {
-            CGContextBeginPath(context)
-            CGContextMoveToPoint(context, point.x, viewPortHandler.contentTop)
-            CGContextAddLineToPoint(context, point.x, viewPortHandler.contentBottom)
-            CGContextStrokePath(context)
+//            CGContextBeginPath(context)
+//            CGContextMoveToPoint(context, point.x, viewPortHandler.contentTop)
+//            CGContextAddLineToPoint(context, point.x, viewPortHandler.contentBottom)
+//            CGContextStrokePath(context)
+            CGContextSaveGState(context);
+            let lineImage = NSUIImage(named: "firstInvest_highlight_line")
+            lineImage?.drawInRect(CGRectMake(point.x-8.0/2.0, viewPortHandler.contentTop, 8, viewPortHandler.contentBottom - viewPortHandler.contentTop))
+            CGContextRestoreGState( context );
         }
         
         // draw horizontal highlight lines
